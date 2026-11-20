@@ -1,13 +1,6 @@
 """
 Carga da base "Folclore Paraibano" no Memgraph (grafo de propriedades).
 
-Lê dados/entidades_paraiba_completo.json (a mesma base do Mini-Projeto 3)
-e cria o grafo do zero. Pode ser executado quantas vezes quiser: o script
-começa apagando tudo, então o resultado é sempre o mesmo.
-
-Uso:
-    python carga.py            # carrega no Memgraph (bolt://localhost:7687)
-    python carga.py --dry-run  # só valida o JSON e mostra as contagens esperadas
 """
 import argparse
 import json
@@ -58,7 +51,7 @@ def limpar(mapa):
 
 
 # ------------------------------------------------------------
-# 1. Preparar os dados (só Python, não toca no banco)
+# 1. Preparar os dados para a carga
 # ------------------------------------------------------------
 def preparar(entidades):
     dados = {

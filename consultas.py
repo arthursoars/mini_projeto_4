@@ -1,7 +1,6 @@
 """
 Aplicação de consultas Cypher sobre o grafo "Folclore Paraibano" (Memgraph).
 
-Uso:  python consultas.py
 """
 from neo4j import GraphDatabase
 
