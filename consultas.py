@@ -1,11 +1,6 @@
 """
 Aplicação de consultas Cypher sobre o grafo "Folclore Paraibano" (Memgraph).
 
-Executa, em ordem, todas as consultas do Mini-Projeto 3 reescritas em Cypher
-(as 7 do rdflib e as 11 de SPARQL) e mais 6 consultas de travessia
-(a consulta 6 do rdflib é impressa em dois blocos).
-Cada consulta é impressa com número, origem no MP3 e propósito.
-
 Uso:  python consultas.py
 """
 from neo4j import GraphDatabase
@@ -60,7 +55,7 @@ def main():
                   s.run("MATCH ()-[r]->() RETURN count(r) AS n").single()["n"])
 
             # ==================================================
-            # PARTE A - consultas do rdflib (MP3) em Cypher
+            # PARTE A - consultas do rdflib em Cypher
             # ==================================================
             consulta(s, "rdflib 1",
                 "Listar as 32 entidades completas (ficam de fora as 46 referências)",
