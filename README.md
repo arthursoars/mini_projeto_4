@@ -4,7 +4,7 @@ Um banco de grafos com **32 lendas do folclore brasileiro ligadas à Paraíba**,
 
 Este projeto é a continuação do Mini-Projeto 3, em que a mesma base era uma ontologia RDF/OWL consultada com SPARQL. Aqui ela foi remodelada como **grafo de propriedades**.
 
-## A base de dados em um minuto
+## A base de dados 
 
 **De onde vêm os dados.** Da API do folclore brasileiro Encantaria Digital. As lendas associadas à Paraíba foram coletadas e guardadas em um arquivo JSON (`dados/entidades_paraiba_completo.json`). O script de carga lê esse arquivo e cria o grafo.
 
